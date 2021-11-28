@@ -4,7 +4,7 @@ const archiver = require('archiver');
 
 const PLATFORMS = ['chrome'];
 // const GIT_URL = 'https://github.com/bewisse/heybuddy';
-const GIT_URL = 'https://github.com/ayushmz29/vawb-chrome-assistant';
+const GIT_URL = 'https://github.com/ayushmz29/vawb-chrome-extension';
 
 function zipDirectory(source, destFile) {
   const output = fs.createWriteStream(destFile);
