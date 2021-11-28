@@ -1,0 +1,7 @@
+
+  @import "@material/typography/mdc-typography";
+
+  h1 {
+    @include mdc-typography('headline1');
+  }
+  
