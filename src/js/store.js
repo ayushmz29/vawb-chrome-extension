@@ -22,7 +22,7 @@ export function isHotwordEnabled() {
 
 export function getHotwords() {
   const customHotwordVal = get(customHotword);
-  const hotwords = ['hey buddy'];
+  const hotwords = ['hey'];
   if (customHotwordVal) {
     hotwords.push(customHotwordVal);
   }

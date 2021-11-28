@@ -47,7 +47,7 @@ let isListening = false;
 const allGrammars = [
   '#JSGF V1.0; grammar pages; public <page> = zoom in | zoom out | page up | page down | scroll up | scroll down',
   '#JSGF V1.0; grammar tabs; public <tab> = close tab | close other tabs | close all tabs;',
-  '#JSGF V1.0; grammar triggers; public <trigger> = hey buddy;'
+  '#JSGF V1.0; grammar triggers; public <trigger> = hey;'
 ];
 
 // The command matching code is a modified version of Backbone.Router by Jeremy Ashkenas, under the MIT license.

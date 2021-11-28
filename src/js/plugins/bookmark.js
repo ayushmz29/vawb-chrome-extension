@@ -16,7 +16,7 @@ const commands = [
         sendPermissionRequest(
           ["bookmarks"],
           "bookmark",
-          "Hey Buddy needs permission to manage your bookmarks.",
+          "VAWB needs permission to manage your bookmarks.",
           bookmarkHandler
         );
       } else {
@@ -44,7 +44,7 @@ const commands = [
         sendPermissionRequest(
           ["bookmarks"],
           "remove bookmark",
-          "Hey Buddy needs permission to manage your bookmarks.",
+          "VAWB needs permission to manage your bookmarks.",
           unbookmarkHandler
         );
       } else {

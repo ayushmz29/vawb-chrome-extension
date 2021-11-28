@@ -37,9 +37,9 @@
 
   let hotword = {
     icon: mdiMicrophone,
-    title: '"Hey buddy" hotword detection',
+    title: '"Hey" hotword detection',
     caption:
-      'We will listen to "Hey Buddy" hotword command in the background. Click here to disable hotword detection.',
+      'We will listen to "Hey" hotword command in the background. Click here to disable hotword detection.',
     errorCaption:
       "Hotword detection is disabled. Click here to enable hotword detection",
     onClick: enabled => {
@@ -52,8 +52,8 @@
     title: "Voice response on search result",
     caption:
       "Auto play voice response on Google search result page if available. Note that to avoid the sound from the voice " +
-      'response from feeding back into the microphone, "Hey Buddy" will stop listening after performing a search result. ' +
-      'You can trigger it again by saying the "Hey Buddy" hotword or by clicking on the "Hey Buddy" icon in browser extension area.',
+      'response from feeding back into the microphone, "VAWB" will stop listening after performing a search result. ' +
+      'You can trigger it again by saying the "hey" hotword or by clicking on the "VAWB" icon in browser extension area.',
     errorCaption:
       "Voice response is disabled. Click here to enable automatically reading the voice response on Google search result.",
     onClick: enabled => {
@@ -65,11 +65,11 @@
     icon: mdiEarHearing,
     title: "Stay listening",
     caption:
-      'After a query is issued, stay listening for another 15 seconds without having to say "Hey Buddy" again. ' +
-      'After 15 seconds of silence, the "Hey Buddy" will stop listening. It can also be stopped by pressing the ' +
+      'After a query is issued, stay listening for another 15 seconds without having to say "Hey" again. ' +
+      'After 15 seconds of silence, the "VAWB" will stop listening. It can also be stopped by pressing the ' +
       '"X" button.',
     errorCaption:
-      '"Hey Buddy" will stop listening after each query. Trigger it by saying the hotword or by clicking on the icon.',
+      '"VAWB" will stop listening after each query. Trigger it by saying the hotword or by clicking on the icon.',
     onClick: enabled => {
       storage.set({ autoOff: !enabled });
     }
@@ -108,7 +108,7 @@
     storage.set({ hotword: true, init: true }, () => {
       chrome.tabs.update({
         // url: "https://bewisse.com/heybuddy/thankyou/"
-        url: "https://github.com/ayushmz29/vawb-chrome-assistant"
+        url: "https://github.com/ayushmz29/vawb-chrome-extension"
       });
     });
   }
@@ -185,25 +185,25 @@
 
 <div class="main-content">
   <h1 class="mdc-typography--headline6">
-    <Button href="https://bewisse.com/heybuddy/">
+    <Button href="https://github.com/ayushmz29/vawb-chrome-extension">
       <img class="logo" src="/img/icon_128.png" height="32" alt="Logo" />
       &nbsp;
-      <Label class="logo-text">Hey Buddy - Chrome Voice Assistant</Label>
+      <Label class="logo-text">VAWB - Chrome Voice Assistant</Label>
     </Button>
   </h1>
   <div>
-    <Button href="https://bewisse.com/heybuddy/commands/" target="_blank">
+    <Button href="https://github.com/ayushmz29/vawb-chrome-extension#vawb-chrome-assistant" target="_blank">
       <MdiIcon size="24" icon={mdiViewList} color={ICON_COLOR} />
       &nbsp;
       <Label color={ICON_COLOR}>All commands</Label>
     </Button>
     &nbsp;
     <Button
-      href="https://chrome.google.com/webstore/detail/chrome-voice-assistant/aollofiafbblhopkofbfmlmbhbdcblem"
+      href="https://github.com/ayushmz29/vawb-chrome-extension"
       target="_blank">
       <MdiIcon size="24" icon={mdiThumbUp} color={ICON_COLOR} />
       &nbsp;
-      <Label color={ICON_COLOR}>Rate us!</Label>
+      <Label color={ICON_COLOR}>Give a star !</Label>
     </Button>
     &nbsp;
     <Button href="https://bewisse.com/contact/" target="_blank">
@@ -218,7 +218,7 @@
       <Card class="card">
         <Content>
           <div class="mdc-typography--subtitle1">
-            🎉 Thank you for installing Hey Buddy 🎉
+            🎉 Thank you for installing VAWB 🎉
           </div>
           <div class="mdc-typography--subtitle2">
             We just need one more permission from you to access your microphone
@@ -235,13 +235,13 @@
         <Content>
           <div class="mdc-typography--subtitle1">Hotwords</div>
           <div class="mdc-typography--caption">
-            Say one of these hotwords to trigger Hey Buddy by voice.
+            Say one of these hotwords to trigger VAWB by voice.
           </div>
           <Textfield
             variant="filled"
             disabled
             class="hotword-input"
-            value="Hey Buddy (default and cannot be changed)"
+            value="Hey (default and cannot be changed)"
             input$readonly
             input$aria-readonly />
           <Textfield

@@ -4,7 +4,7 @@ import { hotwordEnabled } from "./store";
 export function initContextMenus() {
   chrome.contextMenus.removeAll();
   chrome.contextMenus.create({
-    title: '"Hey Buddy" hotword detection',
+    title: '"Hey" hotword detection',
     type: "checkbox",
     id: "hotword",
     contexts: ["browser_action"],

@@ -81,7 +81,7 @@
   function seeAllCommands() {
     chrome.runtime.sendMessage({
       type: "OPEN_URL",
-      url: "https://bewisse.com/heybuddy/commands/"
+      url: "https://github.com/ayushmz29/vawb-chrome-extension#vawb-chrome-assistant"
     });
   }
 
@@ -96,7 +96,8 @@
     chrome.runtime.sendMessage({
       type: "OPEN_URL",
       url:
-        "https://chrome.google.com/webstore/detail/chrome-voice-assistant/aollofiafbblhopkofbfmlmbhbdcblem"
+        // "https://chrome.google.com/webstore/detail/chrome-voice-assistant/aollofiafbblhopkofbfmlmbhbdcblem"
+        "https://github.com/ayushmz29/vawb-chrome-extension"
     });
   }
 
