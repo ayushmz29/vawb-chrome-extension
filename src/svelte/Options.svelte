@@ -206,7 +206,7 @@
       <Label color={ICON_COLOR}>Give a star !</Label>
     </Button>
     &nbsp;
-    <Button href="https://bewisse.com/contact/" target="_blank">
+    <Button href="https://gist.github.com/ayushmz29/a81b00623ad6e9308f50146f2cfada48#file-gistfile1-txt" target="_blank">
       <MdiIcon size="24" icon={mdiEmail} color={ICON_COLOR} />
       &nbsp;
       <Label color={ICON_COLOR}>Contact us!</Label>
